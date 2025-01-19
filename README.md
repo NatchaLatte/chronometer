@@ -1,9 +1,12 @@
 # Chronometer
 โปรแกรมทำนายเวลาที่ใช้ในสร้างไฟล์ที่เก็บรูปแบบรหัสผ่านที่เป็นไปได้ เพื่อใช้ทำ `Penetration test` ด้วยวิธี `Brute-force attack`
 
-## ความต้องการของระบบ
+## ความต้องการของระบบ (เพื่อให้ง่ายต่อการทำตามคู่มือ)
+- windows 10
 - Python 3.10.10
 - Git
+- Visual Studio Code (เพื่อความง่ายในการแสดงผล เนื่องจากตัวโปรแกรมเป็นภาษาไทย)
+- อินเทอร์เน็ต
 
 ## ชุดข้อมูลสำหรับการฝึกฝนอยู่ในไฟล์ `data.json`
 ```json
@@ -19,8 +22,7 @@
 ## เริ่มต้นใช้งานโปรแกรม
 โคลนและเข้าถึง `chronometer`
 ```cmd
-git clone https://github.com/NatchaLatte/chronometer.git
-cd chronometer
+git clone https://github.com/NatchaLatte/chronometer.git && cd chronometer
 ```
 สร้าง `Virtual environment` โดยตั้งชื่อ Environment ว่า `.venv`
 ```cmd
@@ -34,7 +36,13 @@ python -m venv .venv
 ```cmd
 pip install -r requirements.txt
 ```
-เปิดโปรแกรม `chronometer`
+เปิดโปรแกรม `Visual Studio Code`
 ```cmd
-python -m main.py
+code .
+```
+กด `ctrl` + `j` เพื่อเปิดหน้าต่าง `TERMINAL`
+
+รันโปรแกรม `chronometer`
+```cmd
+python .\main.py
 ```
