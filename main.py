@@ -26,6 +26,8 @@ try:
     # ตรวจสอบความถูกต้องของข้อมูล
     if not min_password_length.isdigit() or not max_password_length.isdigit():
         raise Exception("ความยาวรหัสผ่านต้องเป็นตัวเลขเท่านั้น")
+    min_password_length = int(min_password_length)
+    max_password_length = int(max_password_length)
     if min_password_length < 1 or max_password_length < 1:
         raise Exception("ความยาวรหัสผ่านต้องเป็นจำนวนเต็มบวกเท่านั้น")
     if min_password_length > max_password_length:
